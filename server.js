@@ -43,30 +43,6 @@ app.get('/api/:date?', (req, res) => {
   }) : res.json({
     error: "Invalid Date"
   })
-  // let date = req.params.date;
-  // // // console.log(req.params.date.indexOf('-') > -1);
-  // // if(date.indexOf('-') < 0 || date.indexOf(':') < 0 || date.indexOf('/') < 0 || date.indexOf(',') < 0){
-  // if (!util.types.isDate(new Date(date))) {
-  //   date = parseInt(date);
-  // } else {
-  //   date = date;
-  // }
-
-  // // console.log(isNaN(date.parseInt));
-
-  // console.log(date);
-  // if (!isNaN(new Date(date).getTime())) {
-  //   // let parseDate = parseInt(req.params.date);
-  //   res.json({
-  //     unix: new Date(date).getTime(),
-  //     utc: new Date(date).toUTCString()
-  //   })
-  // }
-  // else {
-  //   res.json({
-  //     error: "Invalid Date"
-  //   })
-  // }
 });
 
 // listen for requests :)
